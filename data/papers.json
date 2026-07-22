@@ -1,0 +1,278 @@
+{
+  "updated_at": "2026-07-22T09:00:00+09:00",
+  "source_agent": "A1-paper-agent",
+  "model": "claude",
+  "papers": [
+    {
+      "id": "P-2026-0001",
+      "title": "Case Study of DATA-Based AX (AI driven Digital Transformation) Platform",
+      "authors": [
+        "Son, D.",
+        "Ha, H."
+      ],
+      "venue": "Journal of Logistics Science & Technology (물류과학기술연구)",
+      "index": [
+        "KCI후보"
+      ],
+      "year": 2025,
+      "url": "https://www.koreascience.kr/article/JAKO202526750441919.page",
+      "summary_3line": "물류 현장에서 AI 활용이 선택이 아닌 필수가 된 상황에서 데이터 기반 AX(AI 전환) 플랫폼 구축 사례를 분석한 국내 연구이다. 실제 물류기업의 플랫폼 아키텍처와 구현 전략을 사례연구 방법으로 검토하여 데이터 수집-분석-의사결정 자동화로 이어지는 전환 경로를 제시한다. 물류 AX 실증의 국내 대표 학술 사례로서 플랫폼 설계 시 데이터 거버넌스가 핵심임을 시사한다.",
+      "keywords": [
+        "물류 AX",
+        "디지털 전환",
+        "데이터 플랫폼",
+        "사례연구"
+      ],
+      "relevance": 0.95,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0002",
+      "title": "전국 우편집중국 개방 물류 AX 실증사업",
+      "authors": [
+        "국토교통부",
+        "우정사업본부",
+        "한국통합물류협회"
+      ],
+      "venue": "국토교통부/우정사업본부 보도자료",
+      "index": [
+        "정책자료"
+      ],
+      "year": 2026,
+      "url": "https://zdnet.co.kr/view/?no=20260714104429",
+      "summary_3line": "국토교통부와 우정사업본부가 전국 우편집중국을 개방하여 하역로봇, AI 분류 등 첨단 물류기술의 현장실증(물류 AX 실증)을 추진하는 정부 실증 프로그램이다. 2026년 7월 참가기업을 모집하고 9월 최종 선정 후 하반기부터 실제 우편물류 현장에서 성능·안정성을 검증하는 방식으로 운영된다. 기술개발 기업이 실물류 현장 실증 기회가 부족하다는 문제를 정부 인프라 개방으로 해소한 국내 물류 AX 실증의 대표 정책 사례이다.",
+      "keywords": [
+        "물류 AX",
+        "현장실증",
+        "국토교통부",
+        "우편물류",
+        "정책"
+      ],
+      "relevance": 0.93,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0003",
+      "title": "Potentials of generative AI in logistics and supply chain management: a guiding review on applications and future research directions",
+      "authors": [
+        "Panja, S.",
+        "Zheng, T.",
+        "Glock, C."
+      ],
+      "venue": "International Journal of Production Research",
+      "index": [
+        "SCIE",
+        "Scopus"
+      ],
+      "year": 2026,
+      "url": "https://www.tandfonline.com/doi/full/10.1080/00207543.2026.2680586",
+      "summary_3line": "생성형 AI가 물류·공급망관리에서 활용될 수 있는 응용 영역을 체계적으로 정리한 IJPR 가이딩 리뷰이다. 문헌 분석을 통해 수요예측, 창고운영, 운송관리 등 기능별 적용 가능성과 연구 공백을 도출하고 향후 연구 방향을 제시한다. 물류 AX 기획 시 생성형 AI 적용 우선순위를 정하는 참조 프레임워크로 활용 가치가 높다.",
+      "keywords": [
+        "생성형 AI",
+        "물류",
+        "공급망관리",
+        "문헌리뷰"
+      ],
+      "relevance": 0.9,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0004",
+      "title": "Agentic LLMs in the supply chain: towards autonomous multi-agent consensus-seeking",
+      "authors": [
+        "Jannelli, V.",
+        "Schöpf, S.",
+        "Bickel, M.",
+        "et al."
+      ],
+      "venue": "International Journal of Production Research",
+      "index": [
+        "SCIE",
+        "Scopus"
+      ],
+      "year": 2025,
+      "url": "https://www.tandfonline.com/doi/full/10.1080/00207543.2025.2604311",
+      "summary_3line": "공급망 내 기업 간 재고·납기 조정 문제를 LLM 기반 자율 에이전트의 합의 탐색(consensus-seeking)으로 자동화하는 프레임워크를 제안한 연구이다. 재고관리 사례연구를 통해 다중 LLM 에이전트가 인간 개입 없이 협상·조정을 수행할 수 있음을 실증하고 오픈소스 코드를 공개했다. 물류 AX에서 에이전틱 AI가 기업 간 협업 프로세스까지 자동화할 수 있음을 보여주는 선도 사례이다.",
+      "keywords": [
+        "LLM 에이전트",
+        "공급망 조정",
+        "에이전틱 AI",
+        "재고관리"
+      ],
+      "relevance": 0.88,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0005",
+      "title": "「물류 AI 대전환 혁신랩」 출범 - 지능형 물류로 산업 패러다임 전환",
+      "authors": [
+        "국토교통부"
+      ],
+      "venue": "국가물류통합정보센터(NLIC)",
+      "index": [
+        "정책자료"
+      ],
+      "year": 2025,
+      "url": "https://www.nlic.go.kr/nlic/logpolDt.action?fldLogpolRefSeq=1690&command=VIEW",
+      "summary_3line": "국토교통부가 물류산업의 AI 대전환(AX)·디지털 전환(DX) 전략 수립을 위해 산·학·연·스타트업이 참여하는 '물류 AI 대전환 혁신랩'을 2025년 10월 출범시킨 정책 이니셔티브이다. 방대한 데이터 기반 산업인 물류의 특성을 살려 지능형 물류 기술 실증과 규제 개선 과제를 민관 협력으로 발굴하는 방식으로 운영된다. 국내 물류 AX 실증사업의 거버넌스 체계와 정책 방향을 파악할 수 있는 핵심 참고자료이다.",
+      "keywords": [
+        "물류 AI 대전환",
+        "혁신랩",
+        "정책",
+        "민관협력"
+      ],
+      "relevance": 0.85,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0006",
+      "title": "AI-enhanced Digital Twin systems for warehouse logistics optimization: A review of challenges with solutions and future directions",
+      "authors": [
+        "Alam, M.",
+        "Ugli, R.",
+        "Tanha, K.",
+        "et al."
+      ],
+      "venue": "ICT Express (Elsevier)",
+      "index": [
+        "SCIE",
+        "Scopus"
+      ],
+      "year": 2026,
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405959526000093",
+      "summary_3line": "창고물류 최적화를 위한 AI 결합 디지털트윈 시스템의 기술 과제와 해법을 정리한 리뷰 논문이다. 센서 데이터 통합, 실시간 시뮬레이션, AI 예측모델 연계 관점에서 기존 연구의 한계와 해결 방안을 체계적으로 분석한다. 스마트물류센터 실증에서 디지털트윈 기반 검증 환경을 구축할 때의 기술 로드맵을 제공한다.",
+      "keywords": [
+        "디지털트윈",
+        "창고물류",
+        "AI 최적화",
+        "스마트물류센터"
+      ],
+      "relevance": 0.84,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0007",
+      "title": "Impact of generative AI on logistics companies' business models",
+      "authors": [
+        "Kmiecik, M.",
+        "Skórnóg, D."
+      ],
+      "venue": "International Journal of Logistics Research and Applications",
+      "index": [
+        "SSCI",
+        "Scopus"
+      ],
+      "year": 2025,
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13675567.2025.2497537",
+      "summary_3line": "생성형 AI 도입이 물류기업의 비즈니스 모델 구성요소에 미치는 영향을 분석한 실증 연구이다. 물류기업 사례와 비즈니스 모델 캔버스 관점의 분석을 통해 가치제안·운영 프로세스·고객관계 영역에서의 변화를 도출한다. 물류 AX가 단순 자동화를 넘어 수익모델 재설계까지 요구함을 시사한다.",
+      "keywords": [
+        "생성형 AI",
+        "비즈니스 모델",
+        "물류기업",
+        "디지털 전환"
+      ],
+      "relevance": 0.82,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0008",
+      "title": "How Robotics is Shaping Digital Logistics and Supply Chain Management: An Ongoing Call for Research",
+      "authors": [
+        "Rainer, R.",
+        "Richey, R.",
+        "Chowdhury, S."
+      ],
+      "venue": "Journal of Business Logistics",
+      "index": [
+        "SSCI",
+        "Scopus"
+      ],
+      "year": 2025,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jbl.70005",
+      "summary_3line": "로보틱스가 디지털 물류와 공급망관리를 어떻게 재편하고 있는지 정리하고 연구 어젠다를 제시한 JBL 논문이다. 창고 로봇, 자율운송 등 물류 로봇 기술의 도입 현황과 조직·운영 측면의 연구 공백을 분석한다. 풀필먼트 자동화 실증 연구를 설계할 때 학술적 프레임과 연구 질문 도출에 유용하다.",
+      "keywords": [
+        "물류 로봇",
+        "창고 자동화",
+        "디지털 물류",
+        "연구 어젠다"
+      ],
+      "relevance": 0.8,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0009",
+      "title": "LLMs for Supply Chain Management",
+      "authors": [
+        "Wang, H.",
+        "Jiang, J.",
+        "Hong, L.",
+        "et al."
+      ],
+      "venue": "arXiv:2505.18597",
+      "index": [
+        "Preprint"
+      ],
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2505.18597",
+      "summary_3line": "검색증강생성(RAG) 기반으로 공급망관리 특화 LLM을 구축하여 표준 자격시험과 의사결정 과제에서 전문가 수준 성능을 확인한 연구이다. 구축한 모델로 쿠르노·베르트랑 경쟁과 채찍효과 등 수평·수직 공급망 상호작용을 시뮬레이션했다. 정보공유가 수요 증폭을 완화함을 보여 물류 AX에서 도메인 특화 LLM과 데이터 공유 체계의 중요성을 시사한다.",
+      "keywords": [
+        "LLM",
+        "공급망관리",
+        "RAG",
+        "시뮬레이션"
+      ],
+      "relevance": 0.78,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0010",
+      "title": "A systematic analysis of generative artificial intelligence for supply chain transformation",
+      "authors": [
+        "Bahroun, Z.",
+        "Saihi, A.",
+        "As'ad, R.",
+        "et al."
+      ],
+      "venue": "Supply Chain Analytics (Elsevier)",
+      "index": [
+        "Scopus"
+      ],
+      "year": 2026,
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949863525000883",
+      "summary_3line": "생성형 AI가 공급망 전환(transformation)에 기여하는 방식을 체계적 문헌분석으로 정리한 연구이다. 응용 도메인, 기술 성숙도, 도입 장애요인을 분류 체계로 구조화하여 전환 단계별 활용 시나리오를 제시한다. 물류·공급망 AX 전략 수립 시 기술 선정과 단계적 도입 계획의 근거자료로 활용할 수 있다.",
+      "keywords": [
+        "생성형 AI",
+        "공급망 전환",
+        "체계적 분석",
+        "AX 전략"
+      ],
+      "relevance": 0.75,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0011",
+      "title": "Deep Reinforcement Learning for Dynamic Order Picking in Warehouse Operations",
+      "authors": [
+        "Mahmoudinazlou, S.",
+        "Sobhanan, A.",
+        "Charkhgard, H.",
+        "et al."
+      ],
+      "venue": "arXiv:2408.01656",
+      "index": [
+        "Preprint"
+      ],
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2408.01656",
+      "summary_3line": "주문이 실시간으로 도착하는 동적 오더피킹 환경에서 피커 경로를 최적화하는 심층강화학습(DRL) 프레임워크를 제안한 연구이다. 자율 피킹 장치를 갖춘 단일 블록 창고 시뮬레이션에서 높은 주문 도착률에도 약 98%의 주문 이행률을 달성하여 정적 최적화 기법을 크게 앞섰다. 풀필먼트 자동화 실증에서 DRL 기반 실시간 운영 최적화의 실용 가능성을 보여준다.",
+      "keywords": [
+        "강화학습",
+        "오더피킹",
+        "창고운영",
+        "풀필먼트 자동화"
+      ],
+      "relevance": 0.72,
+      "topic_id": "Q-001"
+    }
+  ]
+}

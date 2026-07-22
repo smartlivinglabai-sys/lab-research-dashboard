@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-07-22",
+  "note": "대시보드에 표시되는 검색 주제 목록. 주제 추가/삭제는 채팅에서 요청하거나 이 파일을 직접 수정. Paper agent와 Topic agent가 각 주제에 대해 병렬 실행됨.",
+  "topics": [
+    {
+      "id": "Q-001",
+      "name": "물류 AX 실증",
+      "name_en": "Logistics AI Transformation (AX) Demonstration",
+      "keywords_ko": ["물류 AX", "스마트물류 실증", "AI 물류 자동화", "물류 디지털 전환", "풀필먼트 자동화"],
+      "keywords_en": ["logistics AI transformation", "smart logistics pilot", "AI-driven logistics automation", "warehouse automation", "digital transformation logistics"],
+      "enabled": true,
+      "added_at": "2026-07-22"
+    }
+  ]
+}
