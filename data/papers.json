@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T09:00:00+09:00",
+  "updated_at": "2026-07-23T15:30:00+09:00",
   "source_agent": "A1-paper-agent",
   "model": "claude",
   "papers": [
@@ -272,6 +272,153 @@
         "풀필먼트 자동화"
       ],
       "relevance": 0.72,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0012",
+      "title": "Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution",
+      "authors": [
+        "Liu, N.",
+        "Kujanpää, K.",
+        "Zhu, Z.",
+        "et al."
+      ],
+      "venue": "arXiv:2607.08960",
+      "index": [
+        "Preprint"
+      ],
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2607.08960",
+      "summary_3line": "창고 운영의 표준운영절차(SOP)를 방향성 비순환 그래프로 인코딩하고 독립 작업을 병렬 서브에이전트에 위임하는 실운영 배포형 에이전틱 LLM 시스템 Eluna를 제안했다. 교사 모델의 에피소드 오류 메모리를 활용한 비대칭 증류로 소형 모델을 미세조정해 13개 과제 벤치마크와 2개 실제 애플리케이션에서 대형 상용 모델을 능가하고 티켓 처리에서 전문가 일치율 94%를 달성했다. LLM 에이전트를 실제 물류센터 운영에 투입할 때 요구되는 절차 준수·지연시간·정확도 문제의 해법을 보여줘 물류 AX 실증 설계에 직접적인 참고가 된다.",
+      "keywords": [
+        "LLM 에이전트",
+        "창고 자동화",
+        "SOP 실행",
+        "멀티에이전트",
+        "물류 AX"
+      ],
+      "relevance": 0.93,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0013",
+      "title": "2026년 물류AI기술 도입 지원사업 공고",
+      "authors": [
+        "국토교통부",
+        "한국교통연구원"
+      ],
+      "venue": "한국교통연구원(KOTI) 공고",
+      "index": [
+        "정책자료"
+      ],
+      "year": 2026,
+      "url": "https://www.koti.re.kr/user/bbs/noticeView.do?bbs_no=72729",
+      "summary_3line": "국토교통부와 한국교통연구원이 중소·중견 물류기업의 AI 기반 소프트웨어·자동화 로봇 도입 비용을 보조하는 2026년 물류AI기술 도입 지원사업을 공고했다. 총 6.65억원 예산으로 기업당 최대 1억원(투자비의 50% 이내)을 지원하며, 스마트물류센터 인증 보유·예정 기업을 기초 혁신과 확장 혁신 트랙으로 나누어 지원한다. 정부가 물류 AX 확산을 위해 도입 비용을 직접 보조하는 최신 정책 사례로, 실증 대상 기업 발굴과 사업 연계 전략 수립에 활용 가치가 크다.",
+      "keywords": [
+        "물류AI 지원사업",
+        "스마트물류센터 인증",
+        "국토교통부",
+        "정책"
+      ],
+      "relevance": 0.88,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0014",
+      "title": "Learning to Staff: Offline Reinforcement Learning and Fine-Tuned LLMs for Warehouse Staffing Optimization",
+      "authors": [
+        "Kujanpää, K.",
+        "Zhu, Y.",
+        "Klinkner, K.",
+        "et al."
+      ],
+      "venue": "arXiv:2603.24883",
+      "index": [
+        "Preprint"
+      ],
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2603.24883",
+      "summary_3line": "반자동 물류 분류(소테이션) 시스템의 실시간 인력 배치 최적화를 위해 오프라인 강화학습과 미세조정 LLM 두 접근을 시뮬레이션 환경에서 비교 평가했다. Transformer 기반 오프라인 RL 정책은 처리량을 2.4% 개선했고, LLM은 SFT와 DPO를 결합할 때 사람이 읽을 수 있는 상태 요약만으로 과거 운영 기준선과 동등 이상의 성능을 보였다. 물류센터 운영 의사결정 AI 도입의 두 가지 실용 경로(전용 RL vs 관리자 친화적 LLM)를 제시해 풀필먼트 자동화 실증의 기술 선택에 시사점을 준다.",
+      "keywords": [
+        "오프라인 강화학습",
+        "LLM 미세조정",
+        "인력 배치 최적화",
+        "풀필먼트 자동화"
+      ],
+      "relevance": 0.82,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0015",
+      "title": "Rethinking Supply Chain Planning: A Generative Paradigm",
+      "authors": [
+        "Yin, J.",
+        "Qi, Y.",
+        "Zhang, J.",
+        "et al."
+      ],
+      "venue": "arXiv:2509.03811",
+      "index": [
+        "Preprint"
+      ],
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2509.03811",
+      "summary_3line": "이커머스 공급망 계획을 정적 최적화 작업이 아닌 상호작용·통합·자동화된 인지 프로세스로 재정의하는 생성형 패러다임을 제안했다. 생성형 AI 기반 에이전틱 프레임워크를 인지 인터페이스로 두어 비정형 비즈니스 맥락과 정형 분석 워크플로를 연결하고 조직 간 사일로를 넘는 다단계 의사결정 조정을 구현했다. 수요예측-보충-조정 전 과정을 에이전트로 오케스트레이션하는 물류 계획 업무 AX 전환의 청사진을 제시한다.",
+      "keywords": [
+        "공급망 계획",
+        "생성형 AI",
+        "에이전틱 프레임워크",
+        "이커머스 물류"
+      ],
+      "relevance": 0.76,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0016",
+      "title": "Integrating Digital Twins into Smart Warehousing: A Practice-Based View Framework for Identifying and Prioritizing Critical Success Factors",
+      "authors": [
+        "Ali, S.S.",
+        "Marmolejo-Saucedo, J.A.",
+        "Landa Piedra, R.",
+        "et al."
+      ],
+      "venue": "Logistics (MDPI)",
+      "index": [
+        "ESCI",
+        "Scopus"
+      ],
+      "year": 2026,
+      "url": "https://www.mdpi.com/2305-6290/10/4/73",
+      "summary_3line": "스마트 창고에 디지털 트윈을 성공적으로 통합하기 위한 핵심 성공요인 9개를 실천기반관점(PBV)으로 도출하고 Best-Worst Method로 우선순위화했다. 문헌 검토와 전문가 검증을 거쳐 디지털 전환·SCM 실무자 6인의 평가를 반영한 결과 협력 학습, 맥락 기반 교육, 게이미피케이션이 최상위 요인으로 나타났다. 기술 준비도 못지않게 조직 학습 메커니즘과 구성원 참여가 디지털 트윈 실증의 성패를 좌우함을 보여 실증사업의 변화관리 설계에 시사점을 준다.",
+      "keywords": [
+        "디지털 트윈",
+        "스마트 창고",
+        "핵심 성공요인",
+        "조직 학습"
+      ],
+      "relevance": 0.72,
+      "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0017",
+      "title": "대전정보문화산업진흥원, 2026년 물류데이터·AI 활용 아이디어 공모전 (스마트물류 기술실증화 사업 연계)",
+      "authors": [
+        "대전정보문화산업진흥원"
+      ],
+      "venue": "대전정보문화산업진흥원 공고",
+      "index": [
+        "정책자료"
+      ],
+      "year": 2026,
+      "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=305011",
+      "summary_3line": "대전정보문화산업진흥원이 스마트물류 기술실증화 사업의 일환으로 'AI와 데이터로 연결하는 물류의 미래'를 주제로 물류데이터·AI 활용 아이디어 공모전을 개최한다. 8월 4일까지 참가자를 모집해 배송 효율 향상, 교통 혼잡 완화, 물류거점 구축 등의 해결안을 데이터 분석 기반으로 제안받고, 수상작은 실증화 사업 성과발표 공유와 정책 수립·사업화 연계를 검토한다. 지자체 차원에서 물류 AX 실증 저변을 넓히고 민간 아이디어를 실증·정책으로 잇는 채널 사례로 참고할 만하다.",
+      "keywords": [
+        "물류데이터",
+        "지자체 실증",
+        "공모전",
+        "스마트물류"
+      ],
+      "relevance": 0.6,
       "topic_id": "Q-001"
     }
   ]
