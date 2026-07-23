@@ -1,16 +1,51 @@
 {
   "version": "1.0",
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-23",
   "note": "대시보드에 표시되는 검색 주제 목록. 주제 추가/삭제는 채팅에서 요청하거나 이 파일을 직접 수정. Paper agent와 Topic agent가 각 주제에 대해 병렬 실행됨.",
   "topics": [
     {
       "id": "Q-001",
       "name": "물류 AX 실증",
       "name_en": "Logistics AI Transformation (AX) Demonstration",
-      "keywords_ko": ["물류 AX", "스마트물류 실증", "AI 물류 자동화", "물류 디지털 전환", "풀필먼트 자동화"],
-      "keywords_en": ["logistics AI transformation", "smart logistics pilot", "AI-driven logistics automation", "warehouse automation", "digital transformation logistics"],
+      "keywords_ko": [
+        "물류 AX",
+        "스마트물류 실증",
+        "AI 물류 자동화",
+        "물류 디지털 전환",
+        "풀필먼트 자동화"
+      ],
+      "keywords_en": [
+        "logistics AI transformation",
+        "smart logistics pilot",
+        "AI-driven logistics automation",
+        "warehouse automation",
+        "digital transformation logistics"
+      ],
       "enabled": true,
       "added_at": "2026-07-22"
+    },
+    {
+      "id": "Q-002",
+      "name": "전기차 배터리 순환체계 기반 고속도로 활성화 전략",
+      "name_en": "Highway Activation Strategy based on EV Battery Circular System",
+      "keywords_ko": [
+        "사용후 배터리",
+        "배터리 순환경제",
+        "전기차 충전 인프라",
+        "고속도로 휴게소",
+        "배터리 교환",
+        "역물류"
+      ],
+      "keywords_en": [
+        "EV battery circular economy",
+        "battery second life",
+        "battery swapping station",
+        "highway rest area",
+        "reverse logistics",
+        "battery recycling logistics"
+      ],
+      "enabled": true,
+      "added_at": "2026-07-23"
     }
   ]
 }

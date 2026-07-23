@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T15:30:00+09:00",
+  "updated_at": "2026-07-23T16:30:00+09:00",
   "source_agent": "A1-paper-agent",
   "model": "claude",
   "papers": [
@@ -420,6 +420,222 @@
       ],
       "relevance": 0.6,
       "topic_id": "Q-001"
+    },
+    {
+      "id": "P-2026-0018",
+      "title": "Optimizing Highway Electric Vehicle Scheduling and Battery Swapping Station Management for Enhanced Renewable Energy Utilization",
+      "authors": [
+        "Wang, D.",
+        "Xu, H.",
+        "Guo, J.",
+        "et al."
+      ],
+      "venue": "Electronics (MDPI)",
+      "index": [
+        "SCIE",
+        "Scopus"
+      ],
+      "year": 2025,
+      "url": "https://www.mdpi.com/2079-9292/14/5/952",
+      "summary_3line": "고속도로 전기차 운행 스케줄링과 배터리 교환소(BSS) 운영을 통합 최적화하여 재생에너지 활용을 높이는 방안을 제시한 연구이다. 전기차의 교통-에너지 특성을 시공간 네트워크 모형으로 표현하고 라그랑주 완화 알고리즘으로 차량 스케줄과 교환소 운영의 상호의존성을 공동 최적화하였다. 사례 분석에서 재생에너지 이용률이 17.3% 개선되어 고속도로 휴게소 기반 배터리 교환·순환 인프라 설계에 직접적인 시사점을 제공한다.",
+      "keywords": [
+        "고속도로",
+        "배터리 교환소",
+        "전기차 스케줄링",
+        "재생에너지"
+      ],
+      "relevance": 0.95,
+      "topic_id": "Q-002"
+    },
+    {
+      "id": "P-2026-0019",
+      "title": "Systematic Planning of Electric Vehicle Battery Swapping and Charging Station Location and Driver Routing with Bi-Level Optimization",
+      "authors": [
+        "Chen, B.",
+        "Chen, J.",
+        "Feng, H."
+      ],
+      "venue": "World Electric Vehicle Journal",
+      "index": [
+        "ESCI",
+        "Scopus"
+      ],
+      "year": 2025,
+      "url": "https://www.mdpi.com/2032-6653/16/9/499",
+      "summary_3line": "전기차 배터리 교환·충전 복합 스테이션의 입지 선정과 운전자 경로 선택을 통합 계획하는 이중레벨(bi-level) 최적화 모형을 제안한 연구이다. 상위 레벨은 건설비용·서비스 지연 최소화 배치를, 하위 레벨은 운전자 통행시간 최소화 경로를 개선 유전알고리즘으로 동시에 풀었다. 교환-충전 하이브리드 시설이 건설비는 15% 높지만 대기·통행시간을 크게 줄여 고속도로 교환식 충전 인프라 투자 타당성의 근거를 제공한다.",
+      "keywords": [
+        "배터리 교환",
+        "충전소 입지",
+        "이중레벨 최적화",
+        "경로 최적화"
+      ],
+      "relevance": 0.88,
+      "topic_id": "Q-002"
+    },
+    {
+      "id": "P-2026-0020",
+      "title": "Electrifying Heavy-Duty Trucks: Battery-Swapping vs Fast Charging",
+      "authors": [
+        "Wang, R.",
+        "Martinez, A.",
+        "Allybokus, Z.",
+        "et al."
+      ],
+      "venue": "arXiv:2503.08080",
+      "index": [
+        "Preprint"
+      ],
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2503.08080",
+      "summary_3line": "전기 대형트럭용 배터리 교환소(BSS) 네트워크의 전략적 입지계획과 일일 운영을 급속충전소와 비교하는 네트워크 최적화 모형을 개발했다. 캘리포니아 화물 고속도로망의 실제 수요 데이터로 최적화 기반 시뮬레이션을 수행해 수송효율·배터리 이용률·전력망 서비스 수익을 평가하였다. 450~500kWh급 배터리에서 BSS가 우위이며 탄소인지 운영으로 CO2를 2~20% 감축할 수 있어 고속도로 물류축의 배터리 순환 인프라 전략에 시사점이 크다.",
+      "keywords": [
+        "대형트럭",
+        "배터리 교환 네트워크",
+        "화물 고속도로",
+        "급속충전"
+      ],
+      "relevance": 0.85,
+      "topic_id": "Q-002"
+    },
+    {
+      "id": "P-2026-0021",
+      "title": "Towards a circular supply chain for retired electric vehicle batteries: A systematic literature review",
+      "authors": [
+        "Zhu, H.",
+        "Hu, J.",
+        "Yang, Y."
+      ],
+      "venue": "International Journal of Production Economics",
+      "index": [
+        "SCIE",
+        "Scopus"
+      ],
+      "year": 2025,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925527325000416",
+      "summary_3line": "사용후 전기차 배터리의 순환 공급망(회수-재사용-재제조-재활용) 연구 249편을 체계적으로 리뷰한 논문이다. 문헌을 재활용 공급망 관리, 환경 평가, 경제성 분석의 3개 클러스터로 분류하고 순환 공급망 통합 프레임워크와 4대 미래 연구방향을 도출하였다. 배터리 가치보존 단계별 물류·거점 설계 연구의 공백을 정리해 고속도로 거점형 배터리 순환체계 연구의 이론적 출발점으로 가치가 높다.",
+      "keywords": [
+        "사용후 배터리",
+        "순환 공급망",
+        "문헌고찰",
+        "역물류"
+      ],
+      "relevance": 0.82,
+      "topic_id": "Q-002"
+    },
+    {
+      "id": "P-2026-0022",
+      "title": "Designing a Reverse Logistics Network for Electric Vehicle Battery Collection, Remanufacturing, and Recycling",
+      "authors": [
+        "Lygizos, A.",
+        "Kastanaki, E.",
+        "Giannis, A."
+      ],
+      "venue": "Sustainability (MDPI)",
+      "index": [
+        "SCIE",
+        "SSCI",
+        "Scopus"
+      ],
+      "year": 2025,
+      "url": "https://www.mdpi.com/2071-1050/17/17/7643",
+      "summary_3line": "전기차 사용후 리튬이온 배터리의 수거-재제조-재활용 역물류 네트워크 설계 모형을 제시한 연구이다. 와이블 분포 기반 폐배터리 발생량 예측과 처리전략별 시설 입지·흐름 최적화, 경제성 분석을 결합하였다. 할인회수기간 6.7~8.6년의 재무 타당성을 확인해 도로망 거점(휴게소·물류허브)을 활용한 배터리 회수 네트워크 설계에 방법론적 참고가 된다.",
+      "keywords": [
+        "역물류",
+        "배터리 회수",
+        "네트워크 설계",
+        "경제성 분석"
+      ],
+      "relevance": 0.8,
+      "topic_id": "Q-002"
+    },
+    {
+      "id": "P-2026-0023",
+      "title": "배터리 순환이용 활성화 방안 (사용후 배터리, 국가 핵심 자원으로 키운다)",
+      "authors": [
+        "환경부"
+      ],
+      "venue": "대한민국 정책브리핑",
+      "index": [
+        "정책자료"
+      ],
+      "year": 2025,
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=156689142",
+      "summary_3line": "환경부가 사용후 배터리를 국가 핵심자원으로 육성하기 위해 4대 부문 14개 과제의 '배터리 순환이용 활성화 방안'을 발표했다. 재생원료 인증제(2027년)와 사용 의무화, 생산자책임재활용 확대(2026년), 리튬 회수율 95% 기술개발, 포항 배터리 자원순환 클러스터, 전주기 통합이력 시스템 구축 등을 담았다. 고속도로 휴게소·물류거점을 활용한 배터리 회수·재사용 체계 구상의 제도적 기반이 되는 최신 국가정책이다.",
+      "keywords": [
+        "환경부",
+        "배터리 순환이용",
+        "재생원료 인증",
+        "순환경제"
+      ],
+      "relevance": 0.78,
+      "topic_id": "Q-002"
+    },
+    {
+      "id": "P-2026-0024",
+      "title": "사용후 배터리 산업 육성을 위한 법·제도·인프라 구축방안",
+      "authors": [
+        "관계부처 합동"
+      ],
+      "venue": "대한민국 정책브리핑",
+      "index": [
+        "정책자료"
+      ],
+      "year": 2024,
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156640304",
+      "summary_3line": "관계부처 합동으로 사용후 배터리 산업 육성을 위한 통합법 제정, 재생원료 인증제, 전주기 이력관리 시스템 등 구축방안을 발표한 정책자료이다. 탈거 전 성능평가 도입, 유통 전 안전검사 체계, 배터리 여권 유사 통합이력관리 체계의 단계적 구축 로드맵을 제시하였다. 사용후 배터리 회수·유통·재사용 시장 형성의 제도 틀로서 고속도로 기반 순환물류 비즈니스모델 설계 시 필수 검토 자료이다.",
+      "keywords": [
+        "사용후 배터리",
+        "통합법",
+        "이력관리",
+        "산업 육성"
+      ],
+      "relevance": 0.75,
+      "topic_id": "Q-002"
+    },
+    {
+      "id": "P-2026-0025",
+      "title": "한국도로공사, 2030년까지 고속도로 휴게소 14개소에 전기상용차 충전기 102기 설치",
+      "authors": [
+        "한국도로공사"
+      ],
+      "venue": "아시아투데이 보도",
+      "index": [
+        "정책자료"
+      ],
+      "year": 2025,
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20250703010001919",
+      "summary_3line": "한국도로공사가 2030년까지 고속도로 휴게소 14개소에 전기상용차 충전기 102기를 설치하는 인프라 확충 계획을 협약으로 발표했다. 고속도로 물류축의 전기 상용차 전환에 대응해 휴게소를 대용량 충전 거점으로 전환하는 단계적 구축 방식이다. 휴게소가 충전을 넘어 배터리 교환·회수·ESS 거점으로 확장될 수 있는 물리적 기반을 보여주는 실증 사례다.",
+      "keywords": [
+        "한국도로공사",
+        "고속도로 휴게소",
+        "전기상용차 충전",
+        "물류 전동화"
+      ],
+      "relevance": 0.72,
+      "topic_id": "Q-002"
+    },
+    {
+      "id": "P-2026-0026",
+      "title": "커뮤니티 탐지와 이용자 이용패턴을 반영한 전기차 충전소 입지 최적화",
+      "authors": [
+        "오현석",
+        "이주용"
+      ],
+      "venue": "대한교통학회지",
+      "index": [
+        "KCI"
+      ],
+      "year": 2025,
+      "url": "https://doi.org/10.7470/jkst.2025.43.3.282",
+      "summary_3line": "도로 네트워크의 커뮤니티 구조와 충전 이용자 행태 패턴을 반영한 전기차 충전소 입지 최적화 모형을 제안한 국내 연구이다. 네트워크 커뮤니티 탐지로 수요 권역을 구획하고 실제 이용패턴 데이터를 결합해 충전소 배치를 최적화하였다. 국내 도로망 데이터 기반 입지 방법론으로 고속도로 휴게소 충전·교환 거점의 권역별 배치 전략에 직접 응용 가능하다.",
+      "keywords": [
+        "충전소 입지",
+        "커뮤니티 탐지",
+        "이용패턴",
+        "KCI"
+      ],
+      "relevance": 0.68,
+      "topic_id": "Q-002"
     }
   ]
 }
