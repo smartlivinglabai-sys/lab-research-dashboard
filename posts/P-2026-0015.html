@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rethinking Supply Chain Planning: A Generative Paradigm — Smart Living Lab</title>
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface-1:#fcfcfb; --text-primary:#0b0b0b;
+    --text-secondary:#52514e; --text-muted:#898781; --grid:#e1e0d9; --border:rgba(11,11,11,0.10);
+    --accent:#2a78d6; --accent-soft:#cde2fb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark;
+    --page:#0d0d0d; --surface-1:#1a1a19; --text-primary:#fff; --text-secondary:#c3c2b7;
+    --grid:#2c2c2a; --border:rgba(255,255,255,0.10); --accent:#3987e5; --accent-soft:#104281; } }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background:var(--page); color:var(--text-primary); font-size:15px; line-height:1.75; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 20px 70px; }
+  a.back { color:var(--accent); text-decoration:none; font-size:13.5px; }
+  a.back:hover { text-decoration:underline; }
+  .cat { display:inline-block; margin:18px 0 10px; font-size:12px; font-weight:700; color:var(--accent);
+    background:var(--accent-soft); border-radius:999px; padding:3px 12px; }
+  h1 { font-size:24px; line-height:1.4; margin-bottom:10px; }
+  p.lead { font-size:16px; color:var(--text-secondary); margin-bottom:14px; }
+  .meta { font-size:13px; color:var(--text-muted); padding-bottom:16px; border-bottom:1px solid var(--grid); margin-bottom:8px; }
+  .meta a { color:var(--accent); text-decoration:none; }
+  .meta a:hover { text-decoration:underline; }
+  .idx { display:inline-block; font-size:11px; font-weight:700; color:var(--accent); background:var(--accent-soft);
+    border-radius:5px; padding:1px 7px; margin-left:2px; }
+  section { margin-top:26px; }
+  section h2 { font-size:17px; margin-bottom:8px; padding-left:10px; border-left:3px solid var(--accent); }
+  section p { color:var(--text-primary); }
+  figure { margin:26px 0; background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:18px; }
+  figure svg { width:100%; height:auto; display:block; }
+  figure img { max-width:100%; display:block; margin:0 auto; border-radius:6px; }
+  figcaption { font-size:12px; color:var(--text-muted); text-align:center; margin-top:10px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:26px; }
+  .chip { font-size:12px; padding:3px 11px; border-radius:999px; background:var(--surface-1);
+    border:1px solid var(--grid); color:var(--text-secondary); }
+  footer { margin-top:36px; padding-top:14px; border-top:1px solid var(--grid); font-size:12px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../">← 연구 대시보드로 돌아가기</a>
+  <div><span class="cat">생성형 AI·LLM</span></div>
+  <h1>Rethinking Supply Chain Planning: A Generative Paradigm</h1>
+  <p class="lead">공급망 계획을 계산 문제가 아닌 인지 과정으로 재정의하고, 생성형 에이전트 시스템을 JD.com에 실배치해 계획 정확도 약 22% 향상을 달성한 패러다임 제안 연구.</p>
+  <div class="meta">Yin, J., Qi, Y., Zhang, J. 외 · arXiv:2509.03811 · 2025 <span class='idx'>Preprint</span> · <a href="https://arxiv.org/abs/2509.03811" target="_blank" rel="noopener">원문 보기 ↗</a> · 관련도 76% · 검색주제 Q-001</div>
+  <section><h2>연구 배경</h2><p>전자상거래 시대의 공급망 계획은 수요 변동성, 조직 사일로, 다단계 조정이라는 삼중고에 직면해 있다. 그러나 기존 계획 시스템은 파편화된 프로세스와 정적 최적화에 기반해 있어 이러한 동적 환경에 대응하기 어렵다. 저자들은 계획을 개별 최적화 문제의 집합이 아니라 상호작용적이고 통합적이며 자동화된 인지 과정으로 재정의해야 한다고 주장한다. 이는 계획 업무의 본질을 계산에서 지식 기반 조율로 옮기는 패러다임 전환 제안이다.</p></section>
+  <section><h2>접근 방법</h2><p>제안된 시스템은 생성형 AI 기반 에이전트 계층을 계획 업무의 지능형 인터페이스로 배치한다. 이 계층은 자연어로 표현되는 비정형 비즈니스 맥락(목표, 제약, 상황 정보)을 해석하여 구조화된 분석 워크플로(예측, 최적화 모듈)와 연결한다. 작업 오케스트레이션 에이전트가 사용자의 의도를 과업으로 분해하고, 실행 에이전트가 도메인 지식과 데이터를 활용해 각 과업을 수행하는 구조다. 이를 통해 부서별로 단절되어 있던 계획 사일로를 가로지르는 조직 간 의사결정 조율이 가능해진다. 프레임워크는 JD.com의 실제 운영 환경에 배치되어 검증되었다.</p></section>
+  <figure><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 380'><defs><marker id='ar5' markerWidth='10' markerHeight='8' refX='8' refY='3' orient='auto'><path d='M0,0 L8,3 L0,6 Z' fill='#52514e'/></marker></defs><text x='360' y='34' text-anchor='middle' font-family='system-ui' font-size='16' font-weight='bold' fill='#0b0b0b'>생성형 공급망 계획 패러다임</text><rect x='30' y='90' width='190' height='90' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='125' y='123' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>비정형 비즈니스 맥락</text><text x='125' y='148' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>자연어 목표·제약·상황</text><rect x='265' y='90' width='200' height='90' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='365' y='118' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>생성형 에이전트 계층</text><text x='365' y='143' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>의도 해석·과업 분해</text><text x='365' y='163' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>작업 오케스트레이션</text><rect x='510' y='90' width='180' height='90' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='600' y='123' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>구조화 분석 워크플로</text><text x='600' y='148' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>예측·최적화 모듈 실행</text><rect x='510' y='245' width='180' height='90' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='600' y='278' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>조직 간 조율·실행</text><text x='600' y='303' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>계획 사일로 연결</text><rect x='265' y='245' width='200' height='90' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='365' y='278' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>운영 성과 (JD.com)</text><text x='365' y='303' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>계획 정확도 +22%, 재고보유율 +2%</text><line x1='220' y1='135' x2='259' y2='135' stroke='#52514e' stroke-width='2' marker-end='url(#ar5)'/><line x1='465' y1='135' x2='504' y2='135' stroke='#52514e' stroke-width='2' marker-end='url(#ar5)'/><line x1='600' y1='180' x2='600' y2='239' stroke='#52514e' stroke-width='2' marker-end='url(#ar5)'/><line x1='510' y1='290' x2='471' y2='290' stroke='#52514e' stroke-width='2' marker-end='url(#ar5)'/><line x1='365' y1='245' x2='365' y2='186' stroke='#52514e' stroke-width='2' stroke-dasharray='5,4' marker-end='url(#ar5)'/></svg><figcaption>개념도 — 원 논문의 방법·구조를 Smart Living Lab이 재구성한 그림입니다.</figcaption></figure>
+  
+  <section><h2>주요 결과</h2><p>JD.com 운영 현장 배치 결과 계획 정확도가 약 22% 향상되었고, 재고보유율(in-stock rate)이 약 2%p 개선되었다. 이는 생성형 인지 패러다임이 개념 수준을 넘어 대규모 전자상거래 운영에서 측정 가능한 성과를 낸다는 것을 보여준다. 저자들은 이 결과를 근거로 경직된 통제 메커니즘에서 인간의 전략적 방향 제시와 시스템의 적응적 실행이 결합된 지속적 지능형 오케스트레이션으로의 전환을 주장한다.</p></section>
+  <section><h2>연구실 시사점</h2><p>계획 문제를 최적화 모델 단위가 아니라 에이전트가 조율하는 워크플로 전체로 보는 관점은 수요예측-재고-수배송 계획을 통합하려는 연구실 과제와 정확히 맞닿아 있다. 자연어 맥락과 구조화된 최적화 모듈을 잇는 인터페이스 설계는 기존 OR 모델 자산을 LLM 시대에 재활용하는 실용적 경로다. 국내 이커머스·택배 기업과의 산학 과제에서 유사한 에이전트 오케스트레이션 실증을 설계할 때 벤치마크 사례로 인용할 수 있다. 계획 정확도와 재고보유율 같은 운영 KPI 기반 평가 방식도 참고할 만하다.</p></section>
+  <div class="chips"><span class='chip'>공급망 계획</span><span class='chip'>생성형 AI</span><span class='chip'>에이전틱 프레임워크</span><span class='chip'>이커머스 물류</span></div>
+  <footer>Smart Living Lab 연구 대시보드 · Paper agent 자동 생성 리뷰 · 요약과 개념도는 원문을 바탕으로 재작성되었습니다 (2026-07-23)</footer>
+</div>
+</body>
+</html>

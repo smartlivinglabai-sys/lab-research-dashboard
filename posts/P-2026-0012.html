@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution — Smart Living Lab</title>
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface-1:#fcfcfb; --text-primary:#0b0b0b;
+    --text-secondary:#52514e; --text-muted:#898781; --grid:#e1e0d9; --border:rgba(11,11,11,0.10);
+    --accent:#2a78d6; --accent-soft:#cde2fb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark;
+    --page:#0d0d0d; --surface-1:#1a1a19; --text-primary:#fff; --text-secondary:#c3c2b7;
+    --grid:#2c2c2a; --border:rgba(255,255,255,0.10); --accent:#3987e5; --accent-soft:#104281; } }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background:var(--page); color:var(--text-primary); font-size:15px; line-height:1.75; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 20px 70px; }
+  a.back { color:var(--accent); text-decoration:none; font-size:13.5px; }
+  a.back:hover { text-decoration:underline; }
+  .cat { display:inline-block; margin:18px 0 10px; font-size:12px; font-weight:700; color:var(--accent);
+    background:var(--accent-soft); border-radius:999px; padding:3px 12px; }
+  h1 { font-size:24px; line-height:1.4; margin-bottom:10px; }
+  p.lead { font-size:16px; color:var(--text-secondary); margin-bottom:14px; }
+  .meta { font-size:13px; color:var(--text-muted); padding-bottom:16px; border-bottom:1px solid var(--grid); margin-bottom:8px; }
+  .meta a { color:var(--accent); text-decoration:none; }
+  .meta a:hover { text-decoration:underline; }
+  .idx { display:inline-block; font-size:11px; font-weight:700; color:var(--accent); background:var(--accent-soft);
+    border-radius:5px; padding:1px 7px; margin-left:2px; }
+  section { margin-top:26px; }
+  section h2 { font-size:17px; margin-bottom:8px; padding-left:10px; border-left:3px solid var(--accent); }
+  section p { color:var(--text-primary); }
+  figure { margin:26px 0; background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:18px; }
+  figure svg { width:100%; height:auto; display:block; }
+  figure img { max-width:100%; display:block; margin:0 auto; border-radius:6px; }
+  figcaption { font-size:12px; color:var(--text-muted); text-align:center; margin-top:10px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:26px; }
+  .chip { font-size:12px; padding:3px 11px; border-radius:999px; background:var(--surface-1);
+    border:1px solid var(--grid); color:var(--text-secondary); }
+  footer { margin-top:36px; padding-top:14px; border-top:1px solid var(--grid); font-size:12px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../">← 연구 대시보드로 돌아가기</a>
+  <div><span class="cat">생성형 AI·LLM</span></div>
+  <h1>Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution</h1>
+  <p class="lead">창고 SOP를 DAG로 인코딩해 절차 준수를 강제하고, 에피소드 증류로 소형 모델을 교사 수준까지 끌어올려 실제 운영에 배치한 에이전트 시스템 Eluna.</p>
+  <div class="meta">Liu, N., Kujanpää, K., Zhu, Z. 외 · arXiv:2607.08960 · 2026 <span class='idx'>Preprint</span> · <a href="https://arxiv.org/abs/2607.08960" target="_blank" rel="noopener">원문 보기 ↗</a> · 관련도 93% · 검색주제 Q-001</div>
+  <section><h2>연구 배경</h2><p>창고 운영은 여러 시스템에 걸친 복잡한 의사결정 로직을 담은 표준운영절차(SOP)에 의해 통제되며, 엄격한 시간 제약 아래에서 오류 없이 수행되어야 한다. 그러나 LLM 에이전트는 절차 준수를 강제할 메커니즘이 없고, SOP 전문을 통째로 컨텍스트에 넣으면 정보 과부하로 성능이 급격히 저하되는 문제가 있다. 즉 신뢰성과 지연시간이라는 운영 현장의 요구와 LLM의 특성 사이에 근본적 간극이 존재한다. Eluna는 이 간극을 메워 실제 운영 환경에 배치 가능한 SOP 실행 에이전트를 목표로 한다.</p></section>
+  <section><h2>접근 방법</h2><p>Eluna는 SOP를 방향성 비순환 그래프(DAG)로 인코딩하고, 현재 단계에 필요한 정보만 점진적으로 공개(progressive disclosure)하여 컨텍스트 과부하를 방지하는 그래프 유도형 멀티에이전트 프레임워크다. 독립적인 하위 작업은 병렬 서브에이전트에 위임되며, 각 서브에이전트는 지속적 코드 실행 환경과 실시간 데이터 접근 능력을 갖는다. 운영 수준의 지연시간·정확도를 맞추기 위해 비대칭 에피소드 증류(asymmetric episodic distillation)를 도입한다. 먼저 강력한 교사 모델을 에피소드 단위 오류 메모리로 개선한 뒤, 교정된 궤적으로 소형 학생 모델을 파인튜닝한다. 이때 메모리는 제거된 상태로 학습되므로 학생 모델은 추론 시 오버헤드 없이 교정 내용을 내재화한다.</p></section>
+  <figure><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 380'><defs><marker id='ar4' markerWidth='10' markerHeight='8' refX='8' refY='3' orient='auto'><path d='M0,0 L8,3 L0,6 Z' fill='#52514e'/></marker></defs><text x='360' y='34' text-anchor='middle' font-family='system-ui' font-size='16' font-weight='bold' fill='#0b0b0b'>Eluna: SOP DAG 기반 창고 운영 에이전트</text><rect x='30' y='75' width='160' height='85' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='110' y='108' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>SOP 문서</text><text x='110' y='132' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>다중 시스템 절차 로직</text><rect x='235' y='75' width='190' height='85' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='330' y='108' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>DAG 인코딩</text><text x='330' y='132' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>점진적 정보 공개</text><rect x='480' y='75' width='200' height='85' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='580' y='108' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>오케스트레이터</text><text x='580' y='132' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>작업 분해·병렬 위임</text><rect x='480' y='230' width='200' height='95' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='580' y='263' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>병렬 서브에이전트</text><text x='580' y='287' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>지속적 코드 실행</text><text x='580' y='307' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>실시간 데이터 접근</text><rect x='30' y='230' width='380' height='95' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='220' y='263' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>비대칭 에피소드 증류</text><text x='220' y='287' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>교사: 오류 메모리로 궤적 개선</text><text x='220' y='307' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>학생: 교정 궤적 파인튜닝 (전문가 일치 94%)</text><line x1='190' y1='117' x2='229' y2='117' stroke='#52514e' stroke-width='2' marker-end='url(#ar4)'/><line x1='425' y1='117' x2='474' y2='117' stroke='#52514e' stroke-width='2' marker-end='url(#ar4)'/><line x1='580' y1='160' x2='580' y2='224' stroke='#52514e' stroke-width='2' marker-end='url(#ar4)'/><line x1='410' y1='277' x2='474' y2='277' stroke='#52514e' stroke-width='2' marker-end='url(#ar4)'/></svg><figcaption>개념도 — 원 논문의 방법·구조를 Smart Living Lab이 재구성한 그림입니다.</figcaption></figure>
+  <figure><img src="https://arxiv.org/html/2607.08960v1/x1.png" alt="원문 그림" loading="lazy" onerror="this.parentElement.style.display='none'"><figcaption>출처: Liu 외, arXiv:2607.08960, 2026 (CC BY 4.0)</figcaption></figure>
+  <section><h2>주요 결과</h2><p>13개 과제로 구성된 운영 벤치마크와 두 개의 실제 운영 애플리케이션에서 파인튜닝된 학생 모델은 교사 모델과 대등하거나 더 나은 성능을 보였다. 또한 더 큰 상용·오픈 베이스라인 모델들을 모두 능가하였다. 티켓 처리 애플리케이션에서는 전문가 판단과 94% 일치율을 달성했으며, 로봇 반송 애플리케이션에서도 베이스라인 대비 개선을 확인하였다. 에피소드 학습 제거 시 성능이 하락하는 어블레이션 결과는 오류 메모리 기반 교사 개선의 기여를 뒷받침한다.</p></section>
+  <section><h2>연구실 시사점</h2><p>SOP를 DAG로 구조화하는 접근은 창고뿐 아니라 항만 게이트 운영, 화물터미널 작업지시 등 절차 중심의 물류·교통 현장 전반에 이식 가능한 설계 패턴이다. 점진적 정보 공개는 긴 운영 매뉴얼을 다루는 모든 LLM 응용 연구에서 컨텍스트 관리 기법으로 참고할 만하다. 교사-학생 에피소드 증류는 온프레미스 소형 모델로 현장 배치를 노리는 연구실 프로젝트에 직접 적용할 수 있는 학습 전략이다. 전문가 일치율 기반 평가 프로토콜도 현장 실증 연구 설계에 유용하다.</p></section>
+  <div class="chips"><span class='chip'>LLM 에이전트</span><span class='chip'>창고 자동화</span><span class='chip'>SOP 실행</span><span class='chip'>멀티에이전트</span><span class='chip'>물류 AX</span></div>
+  <footer>Smart Living Lab 연구 대시보드 · Paper agent 자동 생성 리뷰 · 요약과 개념도는 원문을 바탕으로 재작성되었습니다 (2026-07-23)</footer>
+</div>
+</body>
+</html>

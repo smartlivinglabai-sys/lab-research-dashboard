@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentic LLMs in the supply chain: towards autonomous multi-agent consensus-seeking — Smart Living Lab</title>
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface-1:#fcfcfb; --text-primary:#0b0b0b;
+    --text-secondary:#52514e; --text-muted:#898781; --grid:#e1e0d9; --border:rgba(11,11,11,0.10);
+    --accent:#2a78d6; --accent-soft:#cde2fb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark;
+    --page:#0d0d0d; --surface-1:#1a1a19; --text-primary:#fff; --text-secondary:#c3c2b7;
+    --grid:#2c2c2a; --border:rgba(255,255,255,0.10); --accent:#3987e5; --accent-soft:#104281; } }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background:var(--page); color:var(--text-primary); font-size:15px; line-height:1.75; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 20px 70px; }
+  a.back { color:var(--accent); text-decoration:none; font-size:13.5px; }
+  a.back:hover { text-decoration:underline; }
+  .cat { display:inline-block; margin:18px 0 10px; font-size:12px; font-weight:700; color:var(--accent);
+    background:var(--accent-soft); border-radius:999px; padding:3px 12px; }
+  h1 { font-size:24px; line-height:1.4; margin-bottom:10px; }
+  p.lead { font-size:16px; color:var(--text-secondary); margin-bottom:14px; }
+  .meta { font-size:13px; color:var(--text-muted); padding-bottom:16px; border-bottom:1px solid var(--grid); margin-bottom:8px; }
+  .meta a { color:var(--accent); text-decoration:none; }
+  .meta a:hover { text-decoration:underline; }
+  .idx { display:inline-block; font-size:11px; font-weight:700; color:var(--accent); background:var(--accent-soft);
+    border-radius:5px; padding:1px 7px; margin-left:2px; }
+  section { margin-top:26px; }
+  section h2 { font-size:17px; margin-bottom:8px; padding-left:10px; border-left:3px solid var(--accent); }
+  section p { color:var(--text-primary); }
+  figure { margin:26px 0; background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:18px; }
+  figure svg { width:100%; height:auto; display:block; }
+  figure img { max-width:100%; display:block; margin:0 auto; border-radius:6px; }
+  figcaption { font-size:12px; color:var(--text-muted); text-align:center; margin-top:10px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:26px; }
+  .chip { font-size:12px; padding:3px 11px; border-radius:999px; background:var(--surface-1);
+    border:1px solid var(--grid); color:var(--text-secondary); }
+  footer { margin-top:36px; padding-top:14px; border-top:1px solid var(--grid); font-size:12px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../">← 연구 대시보드로 돌아가기</a>
+  <div><span class="cat">생성형 AI·LLM</span></div>
+  <h1>Agentic LLMs in the supply chain: towards autonomous multi-agent consensus-seeking</h1>
+  <p class="lead">공급망 참여 기업들을 각각 LLM 에이전트로 구현하고, 이들이 협상·추론을 통해 재고 등 핵심 의사결정에서 자율적으로 합의에 도달하는 프레임워크를 제안한 연구.</p>
+  <div class="meta">Jannelli, V., Schöpf, S., Bickel, M. 외 · International Journal of Production Research · 2025 <span class='idx'>SCIE</span> <span class='idx'>Scopus</span> · <a href="https://www.tandfonline.com/doi/full/10.1080/00207543.2025.2604311" target="_blank" rel="noopener">원문 보기 ↗</a> · 관련도 88% · 검색주제 Q-001</div>
+  <section><h2>연구 배경</h2><p>공급망에서는 재고 수준, 납기, 주문량 같은 결정을 두고 여러 기업이 끊임없이 조율해야 하며, 이 합의 과정이 무너지면 채찍효과 같은 불안정성이 발생한다. 전통적으로 이 조율은 사람 간 협의에 의존해 왔고, 기존 자동화 솔루션은 도입 장벽이 높아 중소기업이 배제되거나 복잡한 시나리오를 다루지 못하는 한계가 있었다. 저자들은 협상·추론·계획 능력을 갖춘 LLM이 이 조율 과정 자체를 자동화할 수 있다는 문제의식에서 출발한다. 즉 개별 기업의 의사결정 최적화를 넘어, 기업 간 합의 탐색을 에이전트에게 맡기는 새로운 방향을 제시한다.</p></section>
+  <section><h2>접근 방법</h2><p>논문은 공급망 각 주체(공급사, 제조사, 유통사 등)를 자율 LLM 에이전트로 모델링하고, 이들이 상호작용하도록 하는 공급망 특화 합의 탐색(consensus-seeking) 프레임워크를 설계하였다. 에이전트들은 자연어 기반 협상 라운드를 통해 서로의 제약과 목표를 교환하고, 추론과 계획 능력을 활용해 절충안을 탐색한다. 프레임워크는 LLM 에이전트에 맞게 합의 절차와 상호작용 구조를 명시적으로 정의하여, 단순 대화가 아닌 구조화된 조율이 이루어지도록 한다. 검증을 위해 재고관리 사례연구를 수행하여 에이전트들이 도출한 합의의 품질을 평가하였다. 코드는 오픈소스로 공개되어 후속 연구의 기반을 제공한다.</p></section>
+  <figure><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 380'><defs><marker id='ar2' markerWidth='10' markerHeight='8' refX='8' refY='3' orient='auto'><path d='M0,0 L8,3 L0,6 Z' fill='#52514e'/></marker></defs><text x='360' y='34' text-anchor='middle' font-family='system-ui' font-size='16' font-weight='bold' fill='#0b0b0b'>LLM 에이전트 기반 공급망 합의 탐색</text><rect x='40' y='70' width='170' height='70' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='125' y='100' text-anchor='middle' font-family='system-ui' font-size='14' font-weight='bold' fill='#0b0b0b'>공급사 에이전트</text><text x='125' y='122' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>생산능력·리드타임</text><rect x='40' y='165' width='170' height='70' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='125' y='195' text-anchor='middle' font-family='system-ui' font-size='14' font-weight='bold' fill='#0b0b0b'>제조사 에이전트</text><text x='125' y='217' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>재고·생산계획</text><rect x='40' y='260' width='170' height='70' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='125' y='290' text-anchor='middle' font-family='system-ui' font-size='14' font-weight='bold' fill='#0b0b0b'>유통 에이전트</text><text x='125' y='312' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>수요·판매 정보</text><rect x='290' y='145' width='200' height='110' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='390' y='180' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>합의 탐색 프레임워크</text><text x='390' y='205' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>자연어 협상 라운드</text><text x='390' y='225' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>추론·계획·절충 탐색</text><rect x='540' y='145' width='150' height='110' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='615' y='180' text-anchor='middle' font-family='system-ui' font-size='15' font-weight='bold' fill='#0b0b0b'>합의 결과</text><text x='615' y='205' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>재고·주문 결정</text><text x='615' y='225' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>채찍효과 완화</text><line x1='210' y1='105' x2='286' y2='170' stroke='#52514e' stroke-width='2' marker-end='url(#ar2)'/><line x1='210' y1='200' x2='284' y2='200' stroke='#52514e' stroke-width='2' marker-end='url(#ar2)'/><line x1='210' y1='295' x2='286' y2='232' stroke='#52514e' stroke-width='2' marker-end='url(#ar2)'/><line x1='490' y1='200' x2='534' y2='200' stroke='#52514e' stroke-width='2' marker-end='url(#ar2)'/></svg><figcaption>개념도 — 원 논문의 방법·구조를 Smart Living Lab이 재구성한 그림입니다.</figcaption></figure>
+  
+  <section><h2>주요 결과</h2><p>재고관리 사례연구에서 LLM 에이전트들은 인간 수준에 근접한(near-human-level) 합의를 자율적으로 도출할 수 있음이 확인되었다. 자연어 기반 상호작용 덕분에 별도의 복잡한 시스템 통합 없이도 조율이 가능하여, 중소기업도 접근 가능한 낮은 진입 장벽을 보여주었다. 구조화된 합의 프레임워크가 단순 프롬프팅 대비 조율 품질을 높이는 데 기여함을 시사하며, 저자들은 코드를 공개하여 자율 공급망 연구의 재현 가능한 출발점을 마련하였다.</p></section>
+  <section><h2>연구실 시사점</h2><p>기업 간 조율 문제를 다루는 우리 연구실의 공급망·물류 네트워크 연구에 멀티에이전트 LLM이라는 새 도구를 제공한다. 예컨대 화주-운송사-터미널 간 슬롯 배정이나 공동배송 협상 문제를 LLM 에이전트 합의 게임으로 재구성하는 연구가 가능하다. 오픈소스 코드가 공개되어 있어 비어게임류 시뮬레이션과 결합한 후속 실험을 빠르게 시작할 수 있다. 인간 협상 결과와 에이전트 합의 결과를 비교하는 행동실험 설계도 유망한 연구 아이디어다.</p></section>
+  <div class="chips"><span class='chip'>LLM 에이전트</span><span class='chip'>공급망 조정</span><span class='chip'>에이전틱 AI</span><span class='chip'>재고관리</span></div>
+  <footer>Smart Living Lab 연구 대시보드 · Paper agent 자동 생성 리뷰 · 요약과 개념도는 원문을 바탕으로 재작성되었습니다 (2026-07-23)</footer>
+</div>
+</body>
+</html>

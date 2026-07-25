@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-enhanced Digital Twin systems for warehouse logistics optimization: A review of challenges with solutions and future directions — Smart Living Lab</title>
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface-1:#fcfcfb; --text-primary:#0b0b0b;
+    --text-secondary:#52514e; --text-muted:#898781; --grid:#e1e0d9; --border:rgba(11,11,11,0.10);
+    --accent:#2a78d6; --accent-soft:#cde2fb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark;
+    --page:#0d0d0d; --surface-1:#1a1a19; --text-primary:#fff; --text-secondary:#c3c2b7;
+    --grid:#2c2c2a; --border:rgba(255,255,255,0.10); --accent:#3987e5; --accent-soft:#104281; } }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background:var(--page); color:var(--text-primary); font-size:15px; line-height:1.75; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 20px 70px; }
+  a.back { color:var(--accent); text-decoration:none; font-size:13.5px; }
+  a.back:hover { text-decoration:underline; }
+  .cat { display:inline-block; margin:18px 0 10px; font-size:12px; font-weight:700; color:var(--accent);
+    background:var(--accent-soft); border-radius:999px; padding:3px 12px; }
+  h1 { font-size:24px; line-height:1.4; margin-bottom:10px; }
+  p.lead { font-size:16px; color:var(--text-secondary); margin-bottom:14px; }
+  .meta { font-size:13px; color:var(--text-muted); padding-bottom:16px; border-bottom:1px solid var(--grid); margin-bottom:8px; }
+  .meta a { color:var(--accent); text-decoration:none; }
+  .meta a:hover { text-decoration:underline; }
+  .idx { display:inline-block; font-size:11px; font-weight:700; color:var(--accent); background:var(--accent-soft);
+    border-radius:5px; padding:1px 7px; margin-left:2px; }
+  section { margin-top:26px; }
+  section h2 { font-size:17px; margin-bottom:8px; padding-left:10px; border-left:3px solid var(--accent); }
+  section p { color:var(--text-primary); }
+  figure { margin:26px 0; background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:18px; }
+  figure svg { width:100%; height:auto; display:block; }
+  figure img { max-width:100%; display:block; margin:0 auto; border-radius:6px; }
+  figcaption { font-size:12px; color:var(--text-muted); text-align:center; margin-top:10px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:26px; }
+  .chip { font-size:12px; padding:3px 11px; border-radius:999px; background:var(--surface-1);
+    border:1px solid var(--grid); color:var(--text-secondary); }
+  footer { margin-top:36px; padding-top:14px; border-top:1px solid var(--grid); font-size:12px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../">← 연구 대시보드로 돌아가기</a>
+  <div><span class="cat">디지털트윈·시뮬레이션</span></div>
+  <h1>AI-enhanced Digital Twin systems for warehouse logistics optimization: A review of challenges with solutions and future directions</h1>
+  <p class="lead">디지털 트윈과 AI의 결합이 창고 물류를 어떻게 혁신하는지, 도전과제·해법·미래 연구 방향까지 한눈에 정리한 종합 리뷰 논문입니다.</p>
+  <div class="meta">Alam, M., Ugli, R., Tanha, K. 외 · ICT Express (Elsevier) · 2026 <span class='idx'>SCIE</span> <span class='idx'>Scopus</span> · <a href="https://www.sciencedirect.com/science/article/pii/S2405959526000093" target="_blank" rel="noopener">원문 보기 ↗</a> · 관련도 84% · 검색주제 Q-001</div>
+  <section><h2>연구 배경</h2><p>전자상거래의 폭발적 성장과 인건비 상승, 노동력 부족이 겹치면서 창고 운영의 디지털 전환은 선택이 아닌 필수가 되고 있습니다. 디지털 트윈은 물리적 창고의 가상 복제본을 만들어 실제 운영을 중단하지 않고도 시뮬레이션과 사전 문제 해결을 가능하게 하는 핵심 기술로 주목받고 있습니다. 여기에 AI 기반 예측·최적화, IoT 연결성, AGV와 피킹 로봇이 결합되면서 창고는 데이터 기반 자율 운영 체계로 진화하는 중입니다. 그러나 관련 연구가 기술별로 파편화되어 있고, 특히 경제적 효과에 대한 분석이 부족하다는 문제의식에서 이 리뷰는 출발합니다.</p></section>
+  <section><h2>접근 방법</h2><p>이 논문은 ICT Express에 게재된 리뷰 연구로, 약 118편의 문헌을 종합하여 AI 강화 디지털 트윈 기반 창고 물류의 기술 지형을 체계적으로 정리합니다. 먼저 디지털 트윈, AI(머신러닝·딥러닝·강화학습·컴퓨터 비전), IoT, AGV·로봇으로 이어지는 기술 스택을 계층적으로 구조화합니다. 이후 경로 계획, 작업 할당, 재고 관리, 보관 위치 할당이라는 네 가지 핵심 응용 영역별로 최신 연구 성과와 남은 과제를 대응시켜 분석합니다. 또한 이상 탐지·침입 탐지 등 보안 측면과 함께, 비용 절감·ROI·고객 만족 같은 경제성 관점의 분석 공백도 별도로 짚습니다. 마지막으로 도전과제별 해법과 미래 연구 방향을 매핑하는 방식으로 논의를 마무리합니다.</p></section>
+  <figure><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 380'><defs><marker id='p1a' markerWidth='10' markerHeight='8' refX='8' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 Z' fill='#52514e'/></marker></defs><text x='360' y='36' text-anchor='middle' font-family='system-ui' font-size='16' font-weight='bold' fill='#0b0b0b'>AI 강화 디지털 트윈 기반 창고 물류 최적화 개념도</text><rect x='20' y='70' width='200' height='80' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='120' y='103' text-anchor='middle' font-family='system-ui' font-size='15' fill='#0b0b0b'>물리 창고</text><text x='120' y='126' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>IoT 센서 · AGV · 로봇</text><rect x='260' y='70' width='200' height='80' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='360' y='103' text-anchor='middle' font-family='system-ui' font-size='15' fill='#0b0b0b'>디지털 트윈</text><text x='360' y='126' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>가상 복제 · 시뮬레이션</text><rect x='500' y='70' width='200' height='80' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='600' y='103' text-anchor='middle' font-family='system-ui' font-size='15' fill='#0b0b0b'>AI 엔진</text><text x='600' y='126' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>ML · DL · 강화학습 · 비전</text><rect x='500' y='240' width='200' height='80' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='600' y='273' text-anchor='middle' font-family='system-ui' font-size='15' fill='#0b0b0b'>운영 최적화</text><text x='600' y='296' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>경로계획 · 작업할당 · 재고</text><rect x='20' y='240' width='200' height='80' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='120' y='273' text-anchor='middle' font-family='system-ui' font-size='15' fill='#0b0b0b'>실시간 제어 · 의사결정</text><text x='120' y='296' text-anchor='middle' font-family='system-ui' font-size='13' fill='#0b0b0b'>사전 문제 해결 · 보안 탐지</text><line x1='220' y1='110' x2='252' y2='110' stroke='#52514e' stroke-width='2' marker-end='url(#p1a)'/><line x1='460' y1='110' x2='492' y2='110' stroke='#52514e' stroke-width='2' marker-end='url(#p1a)'/><line x1='600' y1='150' x2='600' y2='232' stroke='#52514e' stroke-width='2' marker-end='url(#p1a)'/><line x1='500' y1='280' x2='228' y2='280' stroke='#52514e' stroke-width='2' marker-end='url(#p1a)'/><line x1='120' y1='240' x2='120' y2='158' stroke='#52514e' stroke-width='2' marker-end='url(#p1a)'/></svg><figcaption>개념도 — 원 논문의 방법·구조를 Smart Living Lab이 재구성한 그림입니다.</figcaption></figure>
+  
+  <section><h2>주요 결과</h2><p>리뷰 결과, 강화학습 기반 로봇 피킹·패킹 자동화와 디지털 트윈 시뮬레이션을 통한 자원 배분 최적화가 운영 효율을 실질적으로 끌어올리는 핵심 동력으로 확인되었습니다. 반면 디지털 전환의 경제적 임팩트, 즉 비용 절감과 투자수익률(ROI), 고객 만족에 대한 정량 분석은 여전히 크게 부족한 것으로 나타났습니다. 연구 격차로는 지속가능성 통합, 동적 환경 적응, 협동로봇(cobot) 활용, 역물류(reverse logistics) 최적화가 지목되었습니다. 향후 방향으로는 5G/6G 연결성과 Industry 5.0 프레임워크 기반의 차세대 창고 자동화가 제시되었습니다.</p></section>
+  <section><h2>연구실 시사점</h2><p>물류·교통·AI를 다루는 우리 연구실 관점에서, 디지털 트윈은 강화학습 정책을 안전하게 학습·검증할 수 있는 시뮬레이션 인프라라는 점에서 전략적 가치가 큽니다. 이 리뷰가 정리한 경로 계획·작업 할당·재고 관리의 과제 지도는 연구 주제를 선정할 때 좋은 출발점이 됩니다. 특히 경제성 평가와 역물류 최적화처럼 공백으로 지목된 영역은 최적화 방법론과 실증 데이터를 결합할 수 있는 우리 연구실의 강점과 잘 맞는 기회 영역입니다. 디지털 트윈-강화학습 연계 실험 환경 구축을 중장기 과제로 검토할 만합니다.</p></section>
+  <div class="chips"><span class='chip'>디지털트윈</span><span class='chip'>창고물류</span><span class='chip'>AI 최적화</span><span class='chip'>스마트물류센터</span></div>
+  <footer>Smart Living Lab 연구 대시보드 · Paper agent 자동 생성 리뷰 · 요약과 개념도는 원문을 바탕으로 재작성되었습니다 (2026-07-23)</footer>
+</div>
+</body>
+</html>

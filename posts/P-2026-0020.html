@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrifying Heavy-Duty Trucks: Battery-Swapping vs Fast Charging — Smart Living Lab</title>
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface-1:#fcfcfb; --text-primary:#0b0b0b;
+    --text-secondary:#52514e; --text-muted:#898781; --grid:#e1e0d9; --border:rgba(11,11,11,0.10);
+    --accent:#2a78d6; --accent-soft:#cde2fb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark;
+    --page:#0d0d0d; --surface-1:#1a1a19; --text-primary:#fff; --text-secondary:#c3c2b7;
+    --grid:#2c2c2a; --border:rgba(255,255,255,0.10); --accent:#3987e5; --accent-soft:#104281; } }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background:var(--page); color:var(--text-primary); font-size:15px; line-height:1.75; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 20px 70px; }
+  a.back { color:var(--accent); text-decoration:none; font-size:13.5px; }
+  a.back:hover { text-decoration:underline; }
+  .cat { display:inline-block; margin:18px 0 10px; font-size:12px; font-weight:700; color:var(--accent);
+    background:var(--accent-soft); border-radius:999px; padding:3px 12px; }
+  h1 { font-size:24px; line-height:1.4; margin-bottom:10px; }
+  p.lead { font-size:16px; color:var(--text-secondary); margin-bottom:14px; }
+  .meta { font-size:13px; color:var(--text-muted); padding-bottom:16px; border-bottom:1px solid var(--grid); margin-bottom:8px; }
+  .meta a { color:var(--accent); text-decoration:none; }
+  .meta a:hover { text-decoration:underline; }
+  .idx { display:inline-block; font-size:11px; font-weight:700; color:var(--accent); background:var(--accent-soft);
+    border-radius:5px; padding:1px 7px; margin-left:2px; }
+  section { margin-top:26px; }
+  section h2 { font-size:17px; margin-bottom:8px; padding-left:10px; border-left:3px solid var(--accent); }
+  section p { color:var(--text-primary); }
+  figure { margin:26px 0; background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:18px; }
+  figure svg { width:100%; height:auto; display:block; }
+  figure img { max-width:100%; display:block; margin:0 auto; border-radius:6px; }
+  figcaption { font-size:12px; color:var(--text-muted); text-align:center; margin-top:10px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:26px; }
+  .chip { font-size:12px; padding:3px 11px; border-radius:999px; background:var(--surface-1);
+    border:1px solid var(--grid); color:var(--text-secondary); }
+  footer { margin-top:36px; padding-top:14px; border-top:1px solid var(--grid); font-size:12px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../">← 연구 대시보드로 돌아가기</a>
+  <div><span class="cat">배터리 교환·충전 인프라</span></div>
+  <h1>Electrifying Heavy-Duty Trucks: Battery-Swapping vs Fast Charging</h1>
+  <p class="lead">캘리포니아 장거리 트럭 6,236건의 실제 통행 데이터로 대형 트럭 전동화에서 배터리 교환(BSS)과 급속충전(FCS)을 계획·운영 최적화 모델로 정면 비교한 연구.</p>
+  <div class="meta">Wang, R., Martinez, A., Allybokus, Z. 외 · arXiv:2503.08080 · 2025 <span class='idx'>Preprint</span> · <a href="https://arxiv.org/abs/2503.08080" target="_blank" rel="noopener">원문 보기 ↗</a> · 관련도 85% · 검색주제 Q-002</div>
+  <section><h2>연구 배경</h2><p>미국 EPA의 2024년 규제는 2032년까지 대형차 온실가스 배출을 29% 감축하도록 요구하면서, 대형 트럭 전동화를 위한 현실적인 에너지 보충 방식 선택이 시급한 과제가 되었습니다. 현재 인프라 계획은 급속충전소(FCS) 중심으로 진행되고 있지만, 배터리 교환소(BSS)는 5~10분 수준의 짧은 서비스 시간, 전력망 수요와 충전 시점의 분리, 계통 서비스 제공 가능성이라는 잠재적 장점을 갖고 있습니다. 그럼에도 장거리 화물 운송에 최적화된 시스템 설계, 특히 배터리 크기와 두 방식의 총체적 효율 비교는 충분히 연구되지 않았습니다. 이 논문은 실제 통행 데이터에 기반해 이 공백을 메웁니다.</p></section>
+  <section><h2>접근 방법</h2><p>저자들은 캘리포니아 NextGen NHTS 데이터에서 30개 권역에 걸친 일일 장거리 트럭 통행 6,236건을 추출하고, HERE 트럭 라우팅 API와 차량 종방향 동역학 모델로 각 통행의 거리·고도·에너지 소비를 산정했습니다. 이를 바탕으로 시스템에 필요한 총 배터리 수를 최소화하는 계획 모델과, 전력 구매 비용·교환 및 에너지 판매 수익·고객 불만족 페널티를 반영해 일일 비용을 최소화하는 운영 모델을 구축했습니다. 모델에는 교환 물류, 배터리 충전상태(SoE) 동역학, 수요 충족, 충·방전 한계 등의 제약이 포함됩니다. 350~800kWh 범위의 배터리 용량에 대해 BSS와 FCS 시스템을 각각 최적화한 뒤, 수송 효율(ton-mile/h)과 배터리 이용 효율(ton-mile/kWh)이라는 두 지표로 비교하고, 배터리 가격·인건비 민감도와 탄소 인지 운영, 주파수 조정 서비스 시나리오까지 분석했습니다.</p></section>
+  <figure><svg viewBox='0 0 720 380' xmlns='http://www.w3.org/2000/svg'><defs><marker id='ar20' markerWidth='10' markerHeight='8' refX='8' refY='3' orient='auto'><path d='M0,0 L8,3 L0,6 Z' fill='#52514e'/></marker></defs><rect x='20' y='30' width='210' height='85' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='125' y='55' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='15' font-weight='bold'>실측 통행 데이터</text><text x='125' y='77' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>캘리포니아 트럭 6,236 통행</text><text x='125' y='97' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>경로·에너지 소비 산정</text><rect x='255' y='30' width='210' height='85' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='360' y='55' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='15' font-weight='bold'>계획 모델</text><text x='360' y='77' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>필요 배터리 총량 최소화</text><text x='360' y='97' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>용량 350-800kWh 탐색</text><rect x='490' y='30' width='210' height='85' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='595' y='55' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='15' font-weight='bold'>운영 모델</text><text x='595' y='77' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>일일 비용 최소화</text><text x='595' y='97' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>충·방전, 계통 서비스</text><rect x='140' y='175' width='200' height='75' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='240' y='202' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='15' font-weight='bold'>BSS 시나리오</text><text x='240' y='225' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>교환 5-10분, 부하 이동</text><rect x='390' y='175' width='200' height='75' fill='#fcfcfb' stroke='#2a78d6' rx='8'/><text x='490' y='202' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='15' font-weight='bold'>FCS 시나리오</text><text x='490' y='225' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>대용량 배터리 필요</text><rect x='90' y='300' width='540' height='60' fill='#cde2fb' stroke='#2a78d6' rx='8'/><text x='360' y='325' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='14' font-weight='bold'>비교 평가: 수송 효율(ton-mile/h) · 배터리 효율(ton-mile/kWh)</text><text x='360' y='347' text-anchor='middle' fill='#0b0b0b' font-family='system-ui' font-size='13'>비용 민감도 · CO2 감축 · 계통 서비스 수익</text><line x1='230' y1='72' x2='251' y2='72' stroke='#52514e' stroke-width='2' marker-end='url(#ar20)'/><line x1='465' y1='72' x2='486' y2='72' stroke='#52514e' stroke-width='2' marker-end='url(#ar20)'/><line x1='530' y1='115' x2='280' y2='171' stroke='#52514e' stroke-width='2' marker-end='url(#ar20)'/><line x1='595' y1='115' x2='500' y2='171' stroke='#52514e' stroke-width='2' marker-end='url(#ar20)'/><line x1='240' y1='250' x2='280' y2='296' stroke='#52514e' stroke-width='2' marker-end='url(#ar20)'/><line x1='490' y1='250' x2='450' y2='296' stroke='#52514e' stroke-width='2' marker-end='url(#ar20)'/></svg><figcaption>개념도 — 원 논문의 방법·구조를 Smart Living Lab이 재구성한 그림입니다.</figcaption></figure>
+  <figure><img src="https://arxiv.org/html/2503.08080v2/x1.png" alt="원문 그림" loading="lazy" onerror="this.parentElement.style.display='none'"><figcaption>출처: Wang 외, arXiv:2503.08080, 2025</figcaption></figure>
+  <section><h2>주요 결과</h2><p>BSS는 450~500kWh의 중간 크기 배터리에서 최적 성능을 보인 반면, FCS는 비슷한 수송 효율을 내려면 650kWh급 대용량 배터리가 필요했습니다. 짧은 교환 시간 덕분에 BSS는 수송 효율에서 앞섰고, 배터리 이용 효율은 최적 용량 기준 FCS보다 2.9~10.8% 낮은 수준에 그쳐 전반적으로 균형 잡힌 우위를 보였습니다. 350kWh 배터리로도 최대 4회 정차를 허용하면 통행의 97% 이상을 소화할 수 있었습니다. 운영 측면에서는 부하 이동을 통해 한계 CO2 배출을 20~96% 줄이면서 이익 감소는 1.1~9.3%에 불과했고, 주파수 조정 서비스 제공 시 겨울철 이익이 최대 16.9% 증가했습니다.</p></section>
+  <section><h2>연구실 시사점</h2><p>대형 화물차 전동화에서 '트럭에 실리는 배터리를 줄이고 스테이션의 배터리 풀을 키우는' BSS 구조가 적재 능력 보존과 물류 생산성에 유리하다는 정량적 근거를 제시한 점이 본 연구실의 배터리 순환 연구와 직결됩니다. 고속도로 축을 따라 배치된 교환소 배터리 풀이 부하 이동과 계통 서비스로 수익을 내는 결과는, 화물 네트워크와 전력망을 잇는 통합 최적화 연구의 실증적 출발점이 됩니다. 실측 통행 데이터와 라우팅 API 기반 에너지 산정 파이프라인은 국내 고속도로 화물 OD 데이터에 그대로 적용해 볼 수 있는 방법론적 템플릿이기도 합니다.</p></section>
+  <div class="chips"><span class='chip'>대형트럭</span><span class='chip'>배터리 교환 네트워크</span><span class='chip'>화물 고속도로</span><span class='chip'>급속충전</span></div>
+  <footer>Smart Living Lab 연구 대시보드 · Paper agent 자동 생성 리뷰 · 요약과 개념도는 원문을 바탕으로 재작성되었습니다 (2026-07-23)</footer>
+</div>
+</body>
+</html>

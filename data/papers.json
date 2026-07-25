@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T16:30:00+09:00",
+  "updated_at": "2026-07-23T17:30:00+09:00",
   "source_agent": "A1-paper-agent",
   "model": "claude",
   "papers": [
@@ -24,7 +24,9 @@
         "사례연구"
       ],
       "relevance": 0.95,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "AI 전환 전략·사례",
+      "blog": "posts/P-2026-0001.html"
     },
     {
       "id": "P-2026-0002",
@@ -49,7 +51,9 @@
         "정책"
       ],
       "relevance": 0.93,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "정책·실증 프로그램",
+      "blog": "posts/P-2026-0002.html"
     },
     {
       "id": "P-2026-0003",
@@ -74,7 +78,9 @@
         "문헌리뷰"
       ],
       "relevance": 0.9,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "생성형 AI·LLM",
+      "blog": "posts/P-2026-0003.html"
     },
     {
       "id": "P-2026-0004",
@@ -100,7 +106,9 @@
         "재고관리"
       ],
       "relevance": 0.88,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "생성형 AI·LLM",
+      "blog": "posts/P-2026-0004.html"
     },
     {
       "id": "P-2026-0005",
@@ -122,7 +130,9 @@
         "민관협력"
       ],
       "relevance": 0.85,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "정책·실증 프로그램",
+      "blog": "posts/P-2026-0005.html"
     },
     {
       "id": "P-2026-0006",
@@ -148,7 +158,9 @@
         "스마트물류센터"
       ],
       "relevance": 0.84,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "디지털트윈·시뮬레이션",
+      "blog": "posts/P-2026-0006.html"
     },
     {
       "id": "P-2026-0007",
@@ -172,7 +184,9 @@
         "디지털 전환"
       ],
       "relevance": 0.82,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "AI 전환 전략·사례",
+      "blog": "posts/P-2026-0007.html"
     },
     {
       "id": "P-2026-0008",
@@ -197,7 +211,9 @@
         "연구 어젠다"
       ],
       "relevance": 0.8,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "로봇·자동화",
+      "blog": "posts/P-2026-0008.html"
     },
     {
       "id": "P-2026-0009",
@@ -222,7 +238,9 @@
         "시뮬레이션"
       ],
       "relevance": 0.78,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "생성형 AI·LLM",
+      "blog": "posts/P-2026-0009.html"
     },
     {
       "id": "P-2026-0010",
@@ -247,7 +265,9 @@
         "AX 전략"
       ],
       "relevance": 0.75,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "AI 전환 전략·사례",
+      "blog": "posts/P-2026-0010.html"
     },
     {
       "id": "P-2026-0011",
@@ -272,7 +292,9 @@
         "풀필먼트 자동화"
       ],
       "relevance": 0.72,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "최적화·강화학습",
+      "blog": "posts/P-2026-0011.html"
     },
     {
       "id": "P-2026-0012",
@@ -298,7 +320,9 @@
         "물류 AX"
       ],
       "relevance": 0.93,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "생성형 AI·LLM",
+      "blog": "posts/P-2026-0012.html"
     },
     {
       "id": "P-2026-0013",
@@ -321,7 +345,9 @@
         "정책"
       ],
       "relevance": 0.88,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "정책·실증 프로그램",
+      "blog": "posts/P-2026-0013.html"
     },
     {
       "id": "P-2026-0014",
@@ -346,7 +372,9 @@
         "풀필먼트 자동화"
       ],
       "relevance": 0.82,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "최적화·강화학습",
+      "blog": "posts/P-2026-0014.html"
     },
     {
       "id": "P-2026-0015",
@@ -371,7 +399,9 @@
         "이커머스 물류"
       ],
       "relevance": 0.76,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "생성형 AI·LLM",
+      "blog": "posts/P-2026-0015.html"
     },
     {
       "id": "P-2026-0016",
@@ -397,7 +427,9 @@
         "조직 학습"
       ],
       "relevance": 0.72,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "디지털트윈·시뮬레이션",
+      "blog": "posts/P-2026-0016.html"
     },
     {
       "id": "P-2026-0017",
@@ -419,7 +451,9 @@
         "스마트물류"
       ],
       "relevance": 0.6,
-      "topic_id": "Q-001"
+      "topic_id": "Q-001",
+      "category": "정책·실증 프로그램",
+      "blog": "posts/P-2026-0017.html"
     },
     {
       "id": "P-2026-0018",
@@ -445,7 +479,9 @@
         "재생에너지"
       ],
       "relevance": 0.95,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "배터리 교환·충전 인프라",
+      "blog": "posts/P-2026-0018.html"
     },
     {
       "id": "P-2026-0019",
@@ -470,7 +506,9 @@
         "경로 최적화"
       ],
       "relevance": 0.88,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "배터리 교환·충전 인프라",
+      "blog": "posts/P-2026-0019.html"
     },
     {
       "id": "P-2026-0020",
@@ -495,7 +533,9 @@
         "급속충전"
       ],
       "relevance": 0.85,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "배터리 교환·충전 인프라",
+      "blog": "posts/P-2026-0020.html"
     },
     {
       "id": "P-2026-0021",
@@ -520,7 +560,9 @@
         "역물류"
       ],
       "relevance": 0.82,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "순환경제·역물류",
+      "blog": "posts/P-2026-0021.html"
     },
     {
       "id": "P-2026-0022",
@@ -546,7 +588,9 @@
         "경제성 분석"
       ],
       "relevance": 0.8,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "순환경제·역물류",
+      "blog": "posts/P-2026-0022.html"
     },
     {
       "id": "P-2026-0023",
@@ -568,7 +612,9 @@
         "순환경제"
       ],
       "relevance": 0.78,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "정책·실증 프로그램",
+      "blog": "posts/P-2026-0023.html"
     },
     {
       "id": "P-2026-0024",
@@ -590,7 +636,9 @@
         "산업 육성"
       ],
       "relevance": 0.75,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "정책·실증 프로그램",
+      "blog": "posts/P-2026-0024.html"
     },
     {
       "id": "P-2026-0025",
@@ -612,7 +660,9 @@
         "물류 전동화"
       ],
       "relevance": 0.72,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "정책·실증 프로그램",
+      "blog": "posts/P-2026-0025.html"
     },
     {
       "id": "P-2026-0026",
@@ -635,7 +685,9 @@
         "KCI"
       ],
       "relevance": 0.68,
-      "topic_id": "Q-002"
+      "topic_id": "Q-002",
+      "category": "배터리 교환·충전 인프라",
+      "blog": "posts/P-2026-0026.html"
     }
   ]
 }
