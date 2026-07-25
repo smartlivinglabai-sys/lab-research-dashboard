@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연구 대시보드 관리자 (웹)</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page:#f9f9f7; --surface-1:#fcfcfb; --text-primary:#0b0b0b; --text-secondary:#52514e;
+    --text-muted:#898781; --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,0.10);
+    --accent:#2a78d6; --accent-soft:#cde2fb; --good:#0ca30c; --good-text:#006300;
+    --warn:#fab219; --crit:#d03b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page:#0d0d0d; --surface-1:#1a1a19; --text-primary:#fff; --text-secondary:#c3c2b7;
+      --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
+      --accent:#3987e5; --accent-soft:#104281; --good-text:#0ca30c;
+    }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+         background:var(--page); color:var(--text-primary); font-size:14px; line-height:1.55; }
+  .wrap { max-width: 860px; margin:0 auto; padding:24px 20px 60px; }
+  header.top { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
+  h1 { font-size:19px; font-weight:700; }
+  .sub { color:var(--text-muted); font-size:12.5px; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+  .tokenbar { background:var(--surface-1); border:1px solid var(--border); border-radius:10px; padding:12px 14px;
+              margin:14px 0; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .tokenbar .lbl { font-size:12.5px; color:var(--text-secondary); font-weight:600; }
+  .tokenbar input { flex:1; min-width:220px; font:inherit; font-size:13px; padding:7px 10px; border-radius:8px;
+                    border:1px solid var(--grid); background:var(--page); color:var(--text-primary); }
+  .tokenbar .hint { width:100%; font-size:11.5px; color:var(--text-muted); }
+  .card { background:var(--surface-1); border:1px solid var(--border); border-radius:10px; padding:16px 18px; margin-bottom:12px; }
+  .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:8px; }
+  label.f { font-size:11.5px; color:var(--text-muted); display:block; margin-bottom:3px; }
+  input[type=text], textarea {
+    font:inherit; font-size:13px; width:100%; padding:7px 10px; border-radius:8px;
+    border:1px solid var(--grid); background:var(--page); color:var(--text-primary);
+  }
+  textarea { resize:vertical; min-height:38px; }
+  .fld { flex:1; min-width:200px; }
+  .btn { appearance:none; font:inherit; font-size:13px; font-weight:600; cursor:pointer;
+         padding:8px 16px; border-radius:8px; border:1px solid var(--grid);
+         background:var(--surface-1); color:var(--text-primary); }
+  .btn:hover { border-color:var(--baseline); }
+  .btn.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .btn.danger { color:var(--crit); }
+  .btn.small { font-size:12px; padding:5px 10px; }
+  .btn:disabled { opacity:.5; cursor:default; }
+  .topic-head { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px; }
+  .topic-id { font-size:11px; color:var(--text-muted); background:var(--page); border:1px solid var(--grid); border-radius:5px; padding:1px 6px; }
+  .toggle { display:flex; align-items:center; gap:6px; font-size:12.5px; color:var(--text-secondary); user-select:none; cursor:pointer; }
+  .actions { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:18px; }
+  #status { font-size:12.5px; color:var(--text-secondary); margin-top:10px; min-height:18px; }
+  #status.ok { color:var(--good-text); }
+  #status.err { color:var(--crit); }
+  .muted { color:var(--text-muted); font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>⚙️ 연구 대시보드 관리자</h1>
+    <span class="sub"><a href="./">← 대시보드</a> · smartlivinglabai-sys/lab-research-dashboard</span>
+  </header>
+
+  <div class="tokenbar">
+    <span class="lbl">🔑 GitHub 토큰</span>
+    <input type="password" id="token" placeholder="ghp_... (저장·수정 시에만 필요, 조회는 토큰 없이 가능)" autocomplete="off">
+    <span class="hint">토큰은 이 페이지의 메모리에서만 사용되며 어디에도 저장·전송되지 않습니다 (GitHub API 호출 제외). 페이지를 닫으면 사라집니다. 연구실 맥의 Lab Automation/admin.html에는 토큰이 미리 입력되어 있습니다.</span>
+  </div>
+
+  <div id="topics"><p class="muted">주제 목록을 불러오는 중...</p></div>
+  <button class="btn" id="addBtn">＋ 주제 추가</button>
+
+  <div class="actions">
+    <button class="btn" id="saveBtn">💾 저장만</button>
+    <button class="btn primary" id="saveRunBtn">🔄 저장 &amp; 재검색 요청</button>
+    <span class="muted">재검색 요청 시 최대 1시간 내에 에이전트가 자동 실행되어 대시보드가 갱신됩니다.</span>
+  </div>
+  <div id="status"></div>
+</div>
+
+<script>
+const OWNER="smartlivinglabai-sys", REPO="lab-research-dashboard", BRANCH="main";
+const API=`https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
+let topicsDoc=null, topicsSha=null;
+
+const b64enc = s => btoa(unescape(encodeURIComponent(s)));
+const b64dec = s => decodeURIComponent(escape(atob(s.replace(/\n/g,""))));
+const hdrs = (auth) => {
+  const h = {"Accept":"application/vnd.github+json"};
+  const t = document.getElementById('token').value.trim();
+  if (auth || t) { if (!t && auth) throw new Error("토큰을 입력하세요"); if (t) h["Authorization"] = "token "+t; }
+  return h;
+};
+const $ = s => document.querySelector(s);
+const setStatus = (msg, cls="") => { const el=$('#status'); el.textContent=msg; el.className=cls; };
+
+async function ghGet(path, auth=false){
+  const r = await fetch(API+path+"?ref="+BRANCH+"&t="+Date.now(), {headers:hdrs(auth)});
+  if(!r.ok) throw new Error(`GET ${path}: ${r.status}`);
+  return r.json();
+}
+async function ghPut(path, contentStr, sha, msg){
+  const body = {message: msg, content: b64enc(contentStr), branch: BRANCH};
+  if (sha) body.sha = sha;
+  const r = await fetch(API+path, {method:"PUT", headers:hdrs(true), body: JSON.stringify(body)});
+  if(!r.ok) throw new Error(`PUT ${path}: ${r.status} ${(await r.text()).slice(0,120)}`);
+  return r.json();
+}
+
+function render(){
+  const box = $('#topics');
+  box.innerHTML = "";
+  topicsDoc.topics.forEach((t,i)=>{
+    const card = document.createElement('div'); card.className='card';
+    card.innerHTML = `
+      <div class="topic-head">
+        <span class="topic-id">${t.id}</span>
+        <div style="display:flex;gap:12px;align-items:center">
+          <label class="toggle"><input type="checkbox" ${t.enabled?'checked':''} class="en"> 활성</label>
+          <button class="btn small danger del" data-i="${i}">삭제</button>
+        </div>
+      </div>
+      <div class="row"><div class="fld">
+        <label class="f">주제명</label>
+        <input type="text" class="nm" value="${(t.name||'').replace(/"/g,'&quot;')}">
+      </div></div>
+      <div class="row"><div class="fld">
+        <label class="f">키워드 (쉼표로 구분 — 한국어·영어 함께 입력 가능)</label>
+        <textarea class="kw">${[...(t.keywords_ko||[]),...(t.keywords_en||[])].join(', ')}</textarea>
+      </div></div>`;
+    box.appendChild(card);
+  });
+  box.querySelectorAll('.del').forEach(b=>b.onclick=()=>{ collect(); topicsDoc.topics.splice(+b.dataset.i,1); render(); });
+}
+
+function collect(){
+  document.querySelectorAll('#topics .card').forEach((card,i)=>{
+    const t = topicsDoc.topics[i];
+    t.name = card.querySelector('.nm').value.trim();
+    t.enabled = card.querySelector('.en').checked;
+    const kws = card.querySelector('.kw').value.split(',').map(s=>s.trim()).filter(Boolean);
+    t.keywords_ko = kws.filter(k=>/[가-힣]/.test(k));
+    t.keywords_en = kws.filter(k=>!/[가-힣]/.test(k));
+  });
+}
+
+$('#addBtn').onclick = ()=>{
+  if(!topicsDoc) return;
+  collect();
+  const maxN = topicsDoc.topics.reduce((m,t)=>Math.max(m, parseInt((t.id||'Q-000').slice(2))||0), 0);
+  const id = "Q-"+String(maxN+1).padStart(3,"0");
+  topicsDoc.topics.push({id, name:"", name_en:"", keywords_ko:[], keywords_en:[], enabled:true,
+                         added_at: new Date().toISOString().slice(0,10)});
+  render();
+};
+
+async function save(withRefresh){
+  try{
+    if(!topicsDoc){ setStatus("주제 목록이 아직 로드되지 않았습니다.","err"); return; }
+    collect();
+    if (topicsDoc.topics.some(t=>!t.name)) { setStatus("⚠️ 주제명이 비어 있는 항목이 있습니다.","err"); return; }
+    $('#saveBtn').disabled = $('#saveRunBtn').disabled = true;
+    setStatus("저장 중...");
+    topicsDoc.updated_at = new Date().toISOString();
+    const res = await ghPut("config/topics.json", JSON.stringify(topicsDoc,null,2), topicsSha,
+                            "Update search topics via web admin");
+    topicsSha = res.content.sha;
+    if (withRefresh){
+      let reqSha = null;
+      try { reqSha = (await ghGet("config/refresh_request.json")).sha; } catch(e){}
+      await ghPut("config/refresh_request.json",
+        JSON.stringify({requested_at: new Date().toISOString(), requested_by:"web-admin"},null,2),
+        reqSha, "Request dashboard refresh via web admin");
+      setStatus("✅ 저장 및 재검색 요청 완료 — 최대 1시간 내 자동 실행 후 대시보드가 갱신됩니다. ("+new Date().toLocaleTimeString('ko-KR')+")","ok");
+    } else {
+      setStatus("✅ 저장 완료 — 다음 자동 실행(매일 오전 7시 또는 재검색 요청 시)부터 반영됩니다.","ok");
+    }
+  } catch(e){
+    setStatus("❌ 실패: "+e.message+" (토큰 입력·권한·만료 여부를 확인하세요)","err");
+  } finally {
+    $('#saveBtn').disabled = $('#saveRunBtn').disabled = false;
+  }
+}
+$('#saveBtn').onclick = ()=>save(false);
+$('#saveRunBtn').onclick = ()=>save(true);
+
+(async function init(){
+  try{
+    const f = await ghGet("config/topics.json");
+    topicsDoc = JSON.parse(b64dec(f.content));
+    topicsSha = f.sha;
+    render();
+    setStatus("주제 "+topicsDoc.topics.length+"건 로드됨 (GitHub 기준) — 수정 후 저장하려면 상단에 토큰을 입력하세요.");
+  } catch(e){
+    setStatus("❌ 주제 목록 로드 실패: "+e.message,"err");
+    $('#topics').innerHTML = '<p class="muted">GitHub에서 config/topics.json을 읽지 못했습니다. 잠시 후 새로고침하거나 네트워크를 확인하세요.</p>';
+  }
+})();
+</script>
+</body>
+</html>
